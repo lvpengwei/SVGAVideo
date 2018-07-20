@@ -13,6 +13,8 @@
 		E64075002101ACDA00B9E8E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64074FE2101ACDA00B9E8E1 /* Main.storyboard */; };
 		E64075022101ACDB00B9E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64075012101ACDB00B9E8E1 /* Assets.xcassets */; };
 		E64075052101ACDB00B9E8E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64075032101ACDB00B9E8E1 /* LaunchScreen.storyboard */; };
+		E640750F2101B9A100B9E8E1 /* rose_2.0.0.svga in Resources */ = {isa = PBXBuildFile; fileRef = E640750E2101B9A100B9E8E1 /* rose_2.0.0.svga */; };
+		E64075132101C94600B9E8E1 /* 1532072337.63853.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = E64075122101C94600B9E8E1 /* 1532072337.63853.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		E64075012101ACDB00B9E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64075042101ACDB00B9E8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E64075062101ACDB00B9E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E640750E2101B9A100B9E8E1 /* rose_2.0.0.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = rose_2.0.0.svga; sourceTree = "<group>"; };
+		E64075122101C94600B9E8E1 /* 1532072337.63853.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1532072337.63853.MP4; sourceTree = "<group>"; };
 		ECD1E8756A9574414A592FA5 /* Pods-SVGAVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGAVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SVGAVideo/Pods-SVGAVideo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,8 @@
 		E64074F92101ACDA00B9E8E1 /* SVGAVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E640750E2101B9A100B9E8E1 /* rose_2.0.0.svga */,
+				E64075122101C94600B9E8E1 /* 1532072337.63853.MP4 */,
 				E64074FA2101ACDA00B9E8E1 /* AppDelegate.swift */,
 				E64074FC2101ACDA00B9E8E1 /* ViewController.swift */,
 				E64074FE2101ACDA00B9E8E1 /* Main.storyboard */,
@@ -149,8 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64075052101ACDB00B9E8E1 /* LaunchScreen.storyboard in Resources */,
+				E64075132101C94600B9E8E1 /* 1532072337.63853.MP4 in Resources */,
 				E64075022101ACDB00B9E8E1 /* Assets.xcassets in Resources */,
 				E64075002101ACDA00B9E8E1 /* Main.storyboard in Resources */,
+				E640750F2101B9A100B9E8E1 /* rose_2.0.0.svga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,12 +191,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SVGAVideo/Pods-SVGAVideo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SCRecorder/SCRecorder.framework",
 				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/SVGAPlayer/SVGAPlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCRecorder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGAPlayer.framework",
 			);
@@ -354,7 +364,10 @@
 				DEVELOPMENT_TEAM = 3A75DREAB8;
 				INFOPLIST_FILE = SVGAVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvpengwei.SVGAVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -371,7 +384,10 @@
 				DEVELOPMENT_TEAM = 3A75DREAB8;
 				INFOPLIST_FILE = SVGAVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lvpengwei.SVGAVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
